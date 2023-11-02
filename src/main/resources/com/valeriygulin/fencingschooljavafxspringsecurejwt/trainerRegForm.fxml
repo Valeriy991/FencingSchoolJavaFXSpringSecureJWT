@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="503.0" prefWidth="281.0" stylesheets="@bootstrap3.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.valeriygulin.fencingschooljavafxspringsecurejwt.controller.TrainerRegFormController">
+    <children>
+        <Label layoutX="65.0" layoutY="43.0" text="Логин:"/>
+        <Label layoutX="65.0" layoutY="103.0" text="Пароль:"/>
+        <Label layoutX="65.0" layoutY="163.0" text="Фамилия:"/>
+        <Label layoutX="65.0" layoutY="223.0" text="Имя:"/>
+        <Label layoutX="65.0" layoutY="283.0" text="Отчество:"/>
+        <Label layoutX="65.0" layoutY="343.0" text="Опыт работы:"/>
+        <TextField fx:id="textFieldLogin" layoutX="65.0" layoutY="68.0"/>
+        <TextField fx:id="textFieldPassword" layoutX="65.0" layoutY="128.0"/>
+        <TextField fx:id="textFieldFirstName" layoutX="65.0" layoutY="188.0"/>
+        <TextField fx:id="textFieldUserName" layoutX="65.0" layoutY="248.0"/>
+        <TextField fx:id="textFieldLastName" layoutX="65.0" layoutY="308.0"/>
+        <TextField fx:id="textFieldExp" layoutX="65.0" layoutY="368.0"/>
+        <Button layoutX="66.0" layoutY="428.0" mnemonicParsing="false" onAction="#buttonRegTrainer" prefHeight="26.0"
+                prefWidth="150.0" styleClass="primary" text="Регистрация"/>
+    </children>
+</AnchorPane>

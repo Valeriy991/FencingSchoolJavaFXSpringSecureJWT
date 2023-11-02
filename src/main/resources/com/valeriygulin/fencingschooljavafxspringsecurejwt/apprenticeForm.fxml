@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="517.0" prefWidth="700.0" stylesheets="@bootstrap3.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.valeriygulin.fencingschooljavafxspringsecurejwt.controller.ApprenticeFormController">
+    <children>
+        <Label layoutX="29.0" layoutY="165.0" text="Фамилия"/>
+        <Label layoutX="29.0" layoutY="225.0" text="Имя"/>
+        <Label layoutX="29.0" layoutY="285.0" text="Отчество"/>
+        <Label layoutX="29.0" layoutY="345.0" text="Номер телефона"/>
+        <TextField fx:id="textFieldSurname" layoutX="29.0" layoutY="190.0"/>
+        <TextField fx:id="textFieldName" layoutX="29.0" layoutY="250.0"/>
+        <TextField fx:id="textFiledPatronymic" layoutX="29.0" layoutY="310.0"/>
+        <TextField fx:id="textFieldPhoneNum" layoutX="29.0" layoutY="370.0"/>
+        <Button layoutX="29.0" layoutY="416.0" mnemonicParsing="false" onAction="#buttonUpdateApprentice"
+                prefHeight="51.0" prefWidth="150.0" styleClass="primary" text="Обновить ученика"
+                textAlignment="CENTER"/>
+        <Button layoutX="29.0" layoutY="465.0" mnemonicParsing="false" onAction="#buttonDeleteApprentice"
+                prefHeight="26.0" prefWidth="150.0" styleClass="warning" text="Удалить ученика"/>
+        <Button layoutX="196.0" layoutY="417.0" mnemonicParsing="false" onAction="#ButtonAddTraining" prefHeight="46.0"
+                prefWidth="474.0" styleClass="primary" text="Добавить тренировку"/>
+        <Button layoutX="196.0" layoutY="465.0" mnemonicParsing="false" onAction="#buttonDeleteTraining"
+                prefHeight="26.0" prefWidth="474.0" styleClass="warning" text="Удалить тренировку"/>
+        <Label layoutX="196.0" layoutY="34.0" text="Расписание тренировок"/>
+        <ListView fx:id="listViewTrainings" layoutX="196.0" layoutY="59.0" prefHeight="343.0" prefWidth="474.0"/>
+        <TextField fx:id="textFieldPassword" layoutX="30.0" layoutY="130.0"/>
+        <TextField fx:id="textFieldLogin" layoutX="30.0" layoutY="68.0"/>
+        <Label layoutX="27.0" layoutY="43.0" text="Логин"/>
+        <Label layoutX="27.0" layoutY="106.0" text="Пароль"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="180.0" prefWidth="600.0" stylesheets="@bootstrap3.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.valeriygulin.fencingschooljavafxspringsecurejwt.controller.TrainerScheduleController">
+    <children>
+        <ComboBox fx:id="comboBoxDayWeek" layoutX="41.0" layoutY="60.0" prefWidth="150.0"/>
+        <ComboBox fx:id="comboBoxStartTime" layoutX="228.0" layoutY="60.0" prefWidth="150.0"/>
+        <ComboBox fx:id="comboBoxEndTime" layoutX="408.0" layoutY="60.0" prefWidth="150.0"/>
+        <Button layoutX="42.0" layoutY="114.0" styleClass="primary"
+                mnemonicParsing="false" onAction="#buttonAdd"
+                prefHeight="25.0" prefWidth="515.0" text="Добавить"/>
+        <Label layoutX="41.0" layoutY="35.0" text="День недели"/>
+        <Label layoutX="228.0" layoutY="35.0" text="Время начала работы"/>
+        <Label layoutX="408.0" layoutY="35.0" text="Время окончания работы"/>
+    </children>
+</AnchorPane>

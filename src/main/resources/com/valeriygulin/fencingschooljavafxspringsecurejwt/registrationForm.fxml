@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="285.0" prefWidth="296.0" stylesheets="@bootstrap3.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.valeriygulin.fencingschooljavafxspringsecurejwt.controller.RegistrationController">
+    <children>
+        <Button layoutX="59.0" layoutY="84.0" mnemonicParsing="false" onAction="#buttonCreateAdmin" styleClass="primary"
+                text="Создать аккаунт Админа"/>
+        <Button layoutX="57.0" layoutY="169.0" mnemonicParsing="false" onAction="#buttonCreateApprentice"
+                styleClass="primary" text="Создать аккаунт Ученика"/>
+
+    </children>
+</AnchorPane>

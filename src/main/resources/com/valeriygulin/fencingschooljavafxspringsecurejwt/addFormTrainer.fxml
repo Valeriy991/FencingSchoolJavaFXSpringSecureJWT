@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="360.0" prefWidth="310.0" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.valeriygulin.fencingschooljavafxspringsecurejwt.controller.AddFormForTrainerController">
+    <children>
+        <Label layoutX="39.0" layoutY="40.0" text="Логин" />
+        <Label layoutX="39.0" layoutY="80.0" text="Пароль" />
+        <Label layoutX="39.0" layoutY="120.0" text="Фамилия" />
+        <Label layoutX="39.0" layoutY="160.0" text="Имя" />
+        <Label layoutX="39.0" layoutY="200.0" text="Отчество" />
+        <Label layoutX="39.0" layoutY="240.0" text="Опыт" />
+        <TextField fx:id="textFieldLogin" layoutX="119.0" layoutY="39.0" />
+        <TextField fx:id="textFieldPassword" layoutX="119.0" layoutY="79.0" />
+        <TextField fx:id="textFieldSurname" layoutX="119.0" layoutY="119.0" />
+        <TextField fx:id="textFieldName" layoutX="119.0" layoutY="159.0" />
+        <TextField fx:id="textFieldPatronymic" layoutX="119.0" layoutY="199.0" />
+        <TextField fx:id="textFieldExp" layoutX="119.0" layoutY="239.0" />
+        <Button layoutX="40.0" layoutY="290.0" mnemonicParsing="false" onAction="#buttonAdd" prefHeight="31.0" prefWidth="231.0" styleClass="primary" text="Добавить тренера" />
+    </children>
+</AnchorPane>

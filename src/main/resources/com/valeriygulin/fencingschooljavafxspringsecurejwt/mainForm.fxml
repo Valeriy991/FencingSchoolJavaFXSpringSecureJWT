@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="410.0" prefWidth="945.0" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.valeriygulin.fencingschooljavafxspringsecurejwt.controller.MainController">
+    <children>
+        <Label fx:id="labelWelcome" layoutX="40.0" layoutY="24.0" text="Добро пожаловать: " />
+        <Button layoutX="37.0" layoutY="56.0" mnemonicParsing="false" onAction="#buttonLogOut" styleClass="danger" text="Выйти" />
+        <ListView fx:id="listViewApprentice" layoutX="40.0" layoutY="132.0" prefHeight="200.0" prefWidth="420.0" />
+        <ListView fx:id="listViewTrainer" layoutX="491.0" layoutY="132.0" prefHeight="200.0" prefWidth="420.0" />
+        <Label layoutX="40.0" layoutY="100.0" text="Список учеников:" />
+        <Label layoutX="491.0" layoutY="100.0" text="Список тренеров:" />
+        <Button layoutX="492.0" layoutY="353.0" mnemonicParsing="false" onAction="#buttonAddTrainer" prefHeight="31.0" prefWidth="420.0" styleClass="primary" text="Добавить тренера" />
+        <Button layoutX="37.0" layoutY="353.0" mnemonicParsing="false" onAction="#buttonAddApprentice" prefHeight="31.0" prefWidth="420.0" styleClass="primary" text="Добавить ученика" />
+    </children>
+</AnchorPane>

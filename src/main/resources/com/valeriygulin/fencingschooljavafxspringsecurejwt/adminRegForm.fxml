@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="430.0" prefWidth="274.0" stylesheets="@bootstrap3.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.valeriygulin.fencingschooljavafxspringsecurejwt.controller.AdminRegFormController">
+    <children>
+        <Label layoutX="61.0" layoutY="37.0" text="Логин"/>
+        <Label layoutX="61.0" layoutY="97.0" text="Пароль"/>
+        <Label layoutX="61.0" layoutY="157.0" text="Фамилия"/>
+        <Label layoutX="61.0" layoutY="217.0" text="Имя"/>
+        <Label layoutX="61.0" layoutY="277.0" text="Отчество"/>
+        <TextField fx:id="textFieldLogin" layoutX="61.0" layoutY="62.0"/>
+        <TextField fx:id="textFieldPassword" layoutX="61.0" layoutY="122.0"/>
+        <TextField fx:id="textFieldFirstName" layoutX="61.0" layoutY="182.0"/>
+        <TextField fx:id="textFieldUserName" layoutX="61.0" layoutY="242.0"/>
+        <TextField fx:id="textFieldLastName" layoutX="61.0" layoutY="302.0"/>
+        <Button layoutX="61.0" layoutY="362.0" mnemonicParsing="false"
+                onAction="#buttonRegAdmin" prefHeight="26.0" prefWidth="150.0"
+                styleClass="primary" text="Регистрация"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane accessibleRole="DATE_PICKER" prefHeight="212.0" prefWidth="666.0"
+            stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.valeriygulin.fencingschooljavafxspringsecurejwt.controller.TrainingAddFormController">
+    <children>
+        <ComboBox fx:id="comboBoxTrainers" layoutX="39.0" layoutY="43.0" prefHeight="26.0" prefWidth="588.0"/>
+        <DatePicker fx:id="datePickerOfNewTrainingEditor" layoutX="39.0" layoutY="105.0"/>
+        <Label layoutX="39.0" layoutY="26.0" text="Список тренеров:"/>
+        <Label layoutX="39.0" layoutY="81.0" text="Дата новой тренировки:"/>
+        <ComboBox fx:id="comboBoxOfTimeNewTraining" layoutX="452.0" layoutY="105.0" prefHeight="26.0"
+                  prefWidth="175.0"/>
+        <Label layoutX="452.0" layoutY="81.0" text="Время новой тренировки:"/>
+        <TextField fx:id="textFieldNumGym" layoutX="250.0" layoutY="105.0" prefHeight="26.0" prefWidth="175.0"/>
+        <Label layoutX="250.0" layoutY="81.0" text="Номер зала:"/>
+        <Button layoutX="39.0" layoutY="155.0" mnemonicParsing="false" onAction="#buttonAddNewTraining"
+                prefHeight="26.0" prefWidth="588.0" styleClass="primary" text="Добавить тренировку"/>
+    </children>
+</AnchorPane>

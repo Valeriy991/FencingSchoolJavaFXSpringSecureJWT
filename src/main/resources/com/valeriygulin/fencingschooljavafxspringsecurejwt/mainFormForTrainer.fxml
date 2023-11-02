@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="560.0" prefWidth="682.0" stylesheets="@bootstrap3.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.valeriygulin.fencingschooljavafxspringsecurejwt.controller.MainFormForTrainerController">
+    <children>
+        <Label fx:id="labelWelcome" layoutX="40.0" layoutY="24.0" text="Добро пожаловать: "/>
+        <Button layoutX="40.0" layoutY="53.0" mnemonicParsing="false" onAction="#buttonLogOut" styleClass="danger"
+                text="Выйти"/>
+        <Button layoutX="40.0" layoutY="512.0" mnemonicParsing="false" onAction="#buttonAddApprentice" prefHeight="31.0"
+                prefWidth="622.0" styleClass="primary" text="Добавить ученика"/>
+        <TableView fx:id="tableViewTrainings" layoutX="37.0" layoutY="132.0" prefHeight="298.0" prefWidth="622.0">
+            <columns>
+                <TableColumn fx:id="tableColumnDayWeek" prefWidth="166.00" text="День недели:"/>
+                <TableColumn fx:id="tableColumnStartTime" prefWidth="242.00" text="Время начала работы:"/>
+                <TableColumn fx:id="tableColumnEndTime" prefWidth="213.00" text="Время окончания:"/>
+            </columns>
+        </TableView>
+        <Button layoutX="40.0" layoutY="454.0" mnemonicParsing="false" onAction="#buttonDeleteTrainerSchedule"
+                prefHeight="31.0" prefWidth="622.0" styleClass="warning" text="Удалить расписание"/>
+        <Label layoutX="40.0" layoutY="93.0" text="Расписание тренера:"/>
+    </children>
+</AnchorPane>

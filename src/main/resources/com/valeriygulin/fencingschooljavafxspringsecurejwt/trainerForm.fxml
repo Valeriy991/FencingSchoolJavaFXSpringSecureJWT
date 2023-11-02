@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="511.0" prefWidth="700.0" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.valeriygulin.fencingschooljavafxspringsecurejwt.controller.TrainerFormController">
+    <children>
+        <Label layoutX="28.0" layoutY="138.0" text="Фамилия" />
+        <Label layoutX="28.0" layoutY="198.0" text="Имя" />
+        <Label layoutX="28.0" layoutY="258.0" text="Отчество" />
+        <Label layoutX="28.0" layoutY="318.0" text="Опыт работы" />
+        <TextField fx:id="textFieldSurname" layoutX="28.0" layoutY="163.0" />
+        <TableView fx:id="tableViewTrainings" layoutX="196.0" layoutY="59.0" prefHeight="314.0" prefWidth="474.0">
+            <columns>
+                <TableColumn fx:id="tableColumnDayWeek" prefWidth="145" text="День недели:" />
+                <TableColumn fx:id="tableColumnStartTime" prefWidth="167" text="Время начала работы:" />
+                <TableColumn fx:id="tableColumnEndTime" prefWidth="162" text="Время окончания:" />
+            </columns>
+        </TableView>
+        <TextField fx:id="textFieldName" layoutX="28.0" layoutY="223.0" />
+        <TextField fx:id="textFiledPatronymic" layoutX="28.0" layoutY="283.0" />
+        <TextField fx:id="textFieldExperience" layoutX="28.0" layoutY="343.0" />
+        <Button layoutX="29.0" layoutY="398.0" mnemonicParsing="false" onAction="#buttonUpdateTrainer" prefHeight="51.0" prefWidth="150.0" styleClass="primary" text="Обновить тренера" textAlignment="CENTER" />
+        <Button layoutX="29.0" layoutY="447.0" mnemonicParsing="false" onAction="#buttonDeleteTrainer" prefHeight="26.0" prefWidth="150.0" styleClass="warning" text="Удалить тренера" />
+        <Button layoutX="196.0" layoutY="399.0" mnemonicParsing="false" onAction="#ButtonAddTrainerSchedule" prefHeight="46.0" prefWidth="474.0" styleClass="primary" text="Добавить запись" />
+        <Button layoutX="196.0" layoutY="447.0" mnemonicParsing="false" onAction="#buttonDeleteTrainerSchedule" prefHeight="26.0" prefWidth="474.0" styleClass="warning" text="Удалить запись" />
+        <Label layoutX="196.0" layoutY="34.0" text="Расписание тренера" />
+        <Label layoutX="28.0" layoutY="34.0" text="Логин" />
+        <Label layoutX="28.0" layoutY="87.0" text="Пароль" />
+        <TextField fx:id="textFieldLogin" layoutX="26.0" layoutY="52.0" />
+        <TextField fx:id="textFiledPassword" layoutX="28.0" layoutY="105.0" />
+    </children>
+</AnchorPane>
